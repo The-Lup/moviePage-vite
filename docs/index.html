@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Page</title>
+    <script type="module" crossorigin src="/moviePage-vite/assets/index-CUmp2RFq.js"></script>
+    <link rel="stylesheet" crossorigin href="/moviePage-vite/assets/index-5dRvbkcq.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>🎬 Movie Page</h1>
+    </header>
+
+    <section class="controls">
+      <select id="type-select">
+        <option value="movie">Películas</option>
+        <option value="tv">Series</option>
+      </select>
+
+      <select id="genre-filter">
+        <option value="">Todos los géneros</option>
+      </select>
+      <input type="number" id="year-min" placeholder="Año mínimo" />
+      <input type="number" id="year-max" placeholder="Año máximo" />
+      <input type="text" id="search-input" placeholder="Buscar..." />
+      <button id="apply-filters">Filtrar</button>
+    </section>
+
+    <main>
+      <section id="movie-container" class="movies-grid"></section>
+
+      <div class="pagination">
+        <button id="prev-page">Anterior</button>
+        <span id="page-number">1</span>
+        <button id="next-page">Siguiente</button>
+      </div>
+    </main>
+
+    <!-- Modal -->
+    <div id="movie-modal" class="modal">
+      <div class="modal-content">
+        <button id="close-modal" class="modal-close">✖</button>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
